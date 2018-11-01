@@ -1,0 +1,5 @@
+PORT="{{ memcached_port }}"
+USER="{{ memcached_user }}"
+MAXCONN="{{ memcached_max_conn }}"
+CACHESIZE="{{ memcached_mem_limit }}"
+OPTIONS="-l {{ memcached_listen }} -vv >> {{ memcached_log_file }}"

@@ -1,0 +1,15 @@
+---
+- name: Install memcached
+  yum:
+    name: "{{ memcached_pkg }}"
+    state: present
+
+- name: Enable memcached on boot
+  service:
+    name: memcached
+    enabled: yes
+
+- name: Start memcached
+  service:
+    name: memcached
+    state: started
