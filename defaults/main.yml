@@ -1,0 +1,9 @@
+---
+memcached_pkg: memcached
+memcached_port: 11211
+memcached_listen: 127.0.0.1
+memcached_mem_limit: 128
+memcached_max_conn: 2048
+memcached_log_file: /var/log/memcached.log
+memcached_conf: /etc/sysconfig/memcached
+memcached_user: memcached

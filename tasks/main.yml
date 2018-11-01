@@ -1,0 +1,7 @@
+---
+
+- name: Include install tasks
+  include_tasks: install.yml
+
+- name: Include configuration tasks
+  include_tasks: configure.yml

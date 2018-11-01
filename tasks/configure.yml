@@ -1,0 +1,9 @@
+---
+- name: Configure and Upload Memcached configuration.
+  template:
+    src: sysconfig-memcached.j2
+    dest: "{{ memcached_conf }}"
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart memcached
