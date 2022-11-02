@@ -17,7 +17,7 @@
 - name: Put in place logrotate configuration
   template:
     src: "logrotate-memcached.j2"
-    dest: "/etc/logrotate.d"
+    dest: "/etc/logrotate.d/memcached"
     owner: root
     group: root
     mode: 0644
