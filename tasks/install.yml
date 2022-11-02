@@ -13,3 +13,11 @@
   service:
     name: memcached
     state: started
+
+- name: Put in place logrotate configuration
+  template:
+    src: "logrotate-memcached.j2"
+    dest: "/etc/logrotate.d"
+    owner: root
+    group: root
+    mode: 0644
